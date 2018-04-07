@@ -7,7 +7,7 @@ function! s:RangerOpenDir(...)
 	endif
 
 	let s:ranger_tempfile = tempname()
-	let opts = ' --cmd="set viewmode multipane"'
+	let opts = ' --cmd="set viewmode miller"'
 	let opts .= ' --choosefiles=' . shellescape(s:ranger_tempfile)
 	if a:0 > 1
 		let opts .= ' --selectfile='. shellescape(a:2)
